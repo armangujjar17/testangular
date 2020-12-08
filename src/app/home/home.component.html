@@ -1,0 +1,23 @@
+<app-one  [fromHome]="fromHome"></app-one>
+<app-two [fromHome]="fromHome"></app-two>
+
+<div class="row" style="margin-top: 100px; margin-left: 220px;">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h3> Write Something Here</h3>
+            <br>
+          <input type="text" class="form-control" [(ngModel)]="fromHome" >
+            <br>
+          <!-- <span> {{ fromHome }} </span> -->
+        </div>
+      </div>
+  </div>
+  <div class="col-md-2">
+  </div>
+</div>
+
+
+<app-three [fromHome]="fromHome"></app-three>
+<app-four [fromHome]="fromHome"></app-four>
